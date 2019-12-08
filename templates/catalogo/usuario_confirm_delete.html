@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Eliminar Usuario</h1>
+
+<p>¿Esta seguro de eliminar al usuario: {{ usuario }}?</p>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" action="" value="Si, eliminar."/>
+</form>
+
+{% endblock %}
+

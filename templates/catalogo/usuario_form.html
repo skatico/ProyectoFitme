@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Ingrese los datos para crear usuario.</h1>
+<br>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+
+    </table>
+
+    <input type="submit" value="Submit">
+    <br>
+
+    {% load static %} <img src="{% static 'images/crearusuario.jpg' %}" alt="Crear"
+        style="width:150px;height:150px;" />
+    
+
+    
+    
+</form>
+{% endblock %}

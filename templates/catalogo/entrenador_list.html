@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Lista Entrenadores</h1>
+    <br>
+
+    {% if entrenador_list %}
+    <ul>
+
+      {% for entrenador in entrenador_list %}
+      <li>
+        <a href="{{ Entrenador.get_absolute_url }}"></a> {{ entrenador.primer_nombre }} {{ entrenador.apellido }} || Genero: {{ entrenador.genero }} || Fecha de nacimiento: {{ entrenador.fecha_nac }}
+      </li>
+      <br>
+
+      {% load static %} 
+      {% endfor %}
+      <img src="{% static 'images/entrenador.png' %}" alt="Entrenadores"
+        style="width:555px;height:540px;"/>
+
+    </ul>
+
+    {% else %}
+      <p>No existen entrenadores registrados en esta libreria 😔 .</p>
+    {% endif %}       
+{% endblock %}

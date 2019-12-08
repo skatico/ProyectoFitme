@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Libreria local de proyectofitme</h1>
+<p>Bienvenido a  <em>LocalLibreriaFitme</em> Django website. </p>
+
+
+
+<h2>Contenido dinamico</h2>
+<br>
+    <p>La biblioteca Fitme tiene los siguientes Usuarios y Entrenadores registrados: </p>
+    <ul>
+        <br>
+        <li><strong>Usuarios:</strong> {{ num_usuario }}</li>
+        <li><strong>Entrenadores:</strong> {{ num_entrenador }}</li>
+        
+    </ul>
+    <br>
+
+    <center>{% load static %} <img src="{% static 'images/imgusuarios.jpg' %}" alt="My image"
+        style="width:555px;height:540px;"/></center>
+    
+
+{% endblock %}

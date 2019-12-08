@@ -1,0 +1,11 @@
+{% extends "base generic.html" %}
+
+{% block content %}
+
+<h1>Entrenador: {{ Entrenador }}</h1>
+
+primer_nombre: {{ Entrenador.primer_nombre}}
+<p>{{Entrenador.fecha_nac}} - {% if Entrenador.fecha_nac % }{{Entrenador.fecha_nac}}{% endif %}</p>
+
+
+{% endblock %}

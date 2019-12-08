@@ -1,0 +1,38 @@
+h1{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(15, 233, 15);
+    text-align: center;
+}
+
+.ajustar1{
+    font-size: 25px;
+    color: rgb(0, 38, 255);
+}
+
+.ajustar2{
+    font-size: 25px;
+    color: orange;
+}
+
+.ajustar3{
+    font-size: 25px;
+    color: rgb(255, 0, 149);
+}
+
+.precio{
+    font-size: 40px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.resultado{
+    font-size: 40px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.volver{
+    font-size: 50px;
+    text-align: center;
+}

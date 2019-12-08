@@ -1,0 +1,11 @@
+{% extends "base generic.html" %}
+
+{% block content %}
+
+<h1>Usuario: {{ usuario }}</h1>
+
+primer_nombre: {{ usuario.primer_nombre}}
+<p>{{usuario.fecha_nac}} - {% if usuario.fecha_nac % }{{usuario.fecha_nac}}{% endif %}</p>
+
+
+{% endblock %}

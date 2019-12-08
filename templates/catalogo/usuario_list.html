@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Lista Usuarios</h1>
+    <br>
+
+    {% if usuario_list %}
+    <ul>
+
+      {% for usuario in usuario_list %}
+      <li>
+        <a href="{{ Usuario.get_absolute_url }}"></a> {{ usuario.primer_nombre }} {{ usuario.apellido }} || Genero: {{ usuario.genero }} || Fecha de nacimiento: {{ usuario.fecha_nac }}
+      </li>
+      <br>
+      
+      {% endfor %}
+
+      {% load static %} <img src="{% static 'images/registrados.jpg' %}" alt="Registrados"
+        style="width:555px;height:520px;" />
+
+    </ul>
+
+    {% else %}
+      <p>No existen usuarios registrados en esta libreria 😔 .</p>
+    {% endif %}       
+{% endblock %}
